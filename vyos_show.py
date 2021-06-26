@@ -16,6 +16,6 @@ vyos = {
 #   'verbose': False,       # optional, defaults to False
 }
 net_connect = ConnectHandler(**vyos)
-output = net_connect.send_command('show configuration')
+output = net_connect.send_command('show ip bgp neighbors | match  neighbor\|state\|hold')
 print(output)
 
