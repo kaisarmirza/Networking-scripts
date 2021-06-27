@@ -8,7 +8,7 @@ from netmiko import ConnectHandler
 
 vyos = {
     'device_type': 'vyos',
-    'ip':   '10.10.10.1',
+    'ip':   '10.10.10.1', '10.10.10.2'
     'username': 'vyos',
     'password': 'vyos',
 #   'port' : 8022,          # optional, defaults to 22
